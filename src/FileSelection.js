@@ -4,7 +4,7 @@ import getImageDataFromDataUrl from './utils/getImageDataFromDataUrl';
 //import rose from './assets/rose.jpg';
 import Gallery from './Gallery';
 import RaisedButton from 'material-ui/RaisedButton';
-
+/*
 const styles = {
     container: {
         minHeight: '100%',
@@ -19,7 +19,6 @@ const styles = {
         paddingTop: 100,
         paddingLeft: 10,
         paddingRight: 10,
-        fontSize: '1.2rem',
     },
 
     list: {
@@ -62,12 +61,16 @@ const styles = {
 
     hr: {
         border: 0,
-        borderTop: '1px solid black',
         marginBottom: '1rem',
         marginTop: '1rem',
+    },
+
+    h1: {
+        fontWeight: 'bold',
+        fontSize: '2.5 em'
     }
 };
-
+*/
 class FileSelection extends Component {
     state = {
         showGallery: false,
@@ -115,15 +118,54 @@ class FileSelection extends Component {
         }
 
         return (
-            <div className="container" style={styles.container}>
-            <div class="row">
-                <div className="col-md-6">
-                </div>
-                <div className="col-md-12">
+            <div className="container">
+            <div className="header clearfix">
+
+              <h3 className="text-muted">Project name</h3>
+            </div>
+           
+            <div className="jumbotron">
+              <h1>Jumbotron heading</h1>
+              <p className="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+              <p>
+              <div className="col-md-12">
                     <RaisedButton primary onTouchTap={this.handleOpenGalleryClick} label="Select One Of Our Project" />
                 </div>
+              </p>
             </div>
+            
+            <div className="row marketing">
+              <div className="col-lg-6">
+                  
+                <h4>Subheading</h4>
+                <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+      
+                <h4>Subheading</h4>
+                <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+      
+                <h4>Subheading</h4>
+                <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+              </div>
+      
+              <div className="col-lg-6">
+                <h4>Subheading</h4>
+                <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+      
+                <h4>Subheading</h4>
+                <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+      
+                <h4>Subheading</h4>
+                <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+              </div>
             </div>
+      
+            <footer className="footer">
+              <p>&copy; 2016 Company, Inc.</p>
+            </footer>
+      
+          </div>
+               
+
         );
     }
 }
