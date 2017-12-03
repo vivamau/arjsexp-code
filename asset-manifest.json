@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.02355ae1.css",
   "main.css.map": "static/css/main.02355ae1.css.map",
-  "main.js": "static/js/main.927d5752.js",
-  "main.js.map": "static/js/main.927d5752.js.map",
+  "main.js": "static/js/main.4862cc01.js",
+  "main.js.map": "static/js/main.4862cc01.js.map",
   "static/media/camera_para.dat": "static/media/camera_para.343c761a.dat",
   "static/media/drawing1.png": "static/media/drawing1.2d7491ae.png",
   "static/media/drawing2.png": "static/media/drawing2.2abc7187.png",
@@ -16,6 +16,5 @@
   "static/media/glyphicons-halflings-regular.ttf": "static/media/glyphicons-halflings-regular.e18bbf61.ttf",
   "static/media/glyphicons-halflings-regular.woff": "static/media/glyphicons-halflings-regular.fa277232.woff",
   "static/media/glyphicons-halflings-regular.woff2": "static/media/glyphicons-halflings-regular.448c34a5.woff2",
-  "static/media/hiro.png": "static/media/hiro.b94cb7cf.png",
-  "static/media/patt.hiro": "static/media/patt.553433c3.hiro"
+  "static/media/patt.hiro": "static/media/patt.1dbefbe2.hiro"
 }
