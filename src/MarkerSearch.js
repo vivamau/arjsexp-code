@@ -13,8 +13,8 @@ const styles = {
     },
     content: {
         display: 'inline-block',
-        color: 'red',
-        borderColor: 'red',
+        color: 'white',
+        borderColor: 'white',
         borderWidth: 2,
         borderStyle: 'solid',
         maxWidth: 200,
@@ -32,8 +32,8 @@ const styles = {
 export default () => (
     <div style={styles.container}>
         <div style={styles.content}>
-            Looking for Hiro Marker
-            <img style={styles.img} alt="Hiro marker example" src={hiro} />
+            Looking for a Marker<br/>
+            <img style={styles.img} alt="RMTD marker example" src={hiro} />
         </div>
     </div>
 );

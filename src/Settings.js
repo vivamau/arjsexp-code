@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import RaisedButton from 'material-ui/RaisedButton';
 import Checkbox from 'material-ui/Checkbox';
 import Slider from 'material-ui/Slider';
 import Subheader from 'material-ui/Subheader';
@@ -65,7 +64,7 @@ class Settings extends Component {
     render() {
         const { isOpen } = this.state;
         if (!isOpen) {
-            return <RaisedButton style={styles.openButton} onClick={this.handleOpen} label="Settings" />
+            return <button className="btn btn-success text-uppercase" onClick={this.handleOpen} style={styles.openButton}>Settings</button>
         }
 
         const {
@@ -139,12 +138,7 @@ class Settings extends Component {
                     style={styles.detectEdges}
                 />
 
-                <RaisedButton
-                    primary
-                    fullWidth
-                    onClick={this.handleClose}
-                    label="close"
-                />
+                <button className="btn btn-primary text-uppercase btn-block" onClick={this.handleClose}>Close</button>
             </div>
         );
     }

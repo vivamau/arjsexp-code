@@ -1,13 +1,17 @@
 import React from 'react';
 import GalleryItem from './GalleryItem';
-import RaisedButton from 'material-ui/RaisedButton';
+
 
 const styles = {
     container: {
         position: 'relative',
         height: '100%',
+        backgroundColor: '#eef6ff',
+        padding: '10px 6px',
     },
-
+    rowBkg: {
+        background: '#fff',
+    },
     gallery: {
         display: 'flex',
         flexWrap: 'wrap',
@@ -29,8 +33,12 @@ const defaultImages = [
 ];
 
 const Gallery = ({ images = defaultImages, onClose, onSelected }) => (
-    <div style={styles.container}>        
-        <RaisedButton secondary fullWidth onClick={onClose} label="Cancel" />
+    <div style={styles.container}>       
+        <div class="row" style={styles.rowBkg}> 
+        <div class="col-lg-12">
+        <button className="btn btn-primary text-uppercase btn-block" onClick={onClose}>Back</button>
+        </div>
+        </div>
         <div style={styles.gallery}>        
             {images.map(image => <GalleryItem key={image} image={image} onSelected={onSelected} />)}
         </div>

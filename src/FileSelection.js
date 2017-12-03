@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import getImageDataFromDataUrl from './utils/getImageDataFromDataUrl';
 import hiro from './assets/hiro.png';
+import markerSingle from './assets/singleMarker.pdf';
 import Gallery from './Gallery';
 //import RaisedButton from 'material-ui/RaisedButton';
 
@@ -10,9 +11,7 @@ const styles = {
     },
     jumboBkg: {
         backgroundColor: '#eef6ff',
-    },
-    raisedButtonBkg: {
-        backgroundColor: '#000',
+        boxShadow: '0px 0px 10px #999',
     },
     container: {
         minHeight: '100%',
@@ -129,7 +128,7 @@ class FileSelection extends Component {
             <div className="container">
             <div className="header clearfix">
 
-              <h3 className="text-muted">Sharefair, 6th December 2017</h3>
+              <h3 className="text-muted text-center text-uppercase">RMT Sharefair, 6/12/2017</h3>
             </div>
            
             <div className="jumbotron" style={styles.jumboBkg}>
@@ -140,10 +139,10 @@ class FileSelection extends Component {
             </div>
             <div className="row">
                 <div className="col-xs-12">
-                <img alt="Hiro marker example" src={hiro} style={styles.hiroMarkerImg}/>
+                <a href={markerSingle}><img alt="Hiro marker example" src={hiro} style={styles.hiroMarkerImg}/></a>
                 
                     <p className={styles.textPadding}>
-                        <b><a onTouchTap={this.handleOpenGalleryClick}>Select one, of the unit's fact-sheet</a></b> and then search for a Marker around you or <b><a>download it!</a></b>
+                        <b><a onTouchTap={this.handleOpenGalleryClick}>Select one, of the unit's fact-sheet</a></b> and then search for a Marker around you or <b><a href={markerSingle}>download it!</a></b>
                         <br/>Point it with your camera and enjoy!
                     </p>
                 </div>
@@ -156,7 +155,7 @@ class FileSelection extends Component {
             <div className="row">
               <div className="col-lg-12">
               <hr/>
-                <i className="text-right">Based on an <a>experiment</a> with <a>ARJS</a>.</i>
+                <i className="text-right">Based on an <a href="https://marmelab.com/blog/2017/06/19/augmented-reality-html5.html" target="_blank">experiment</a> with <a href="https://medium.com/arjs" target="_blank">ARJS</a>.</i>
       
               </div>
             </div>
