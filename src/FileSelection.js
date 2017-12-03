@@ -1,11 +1,19 @@
 import React, { Component } from 'react';
 import getImageDataFromDataUrl from './utils/getImageDataFromDataUrl';
-//import hiro from './assets/hiro.png';
-//import rose from './assets/rose.jpg';
+import hiro from './assets/hiro.png';
 import Gallery from './Gallery';
-import RaisedButton from 'material-ui/RaisedButton';
-/*
+//import RaisedButton from 'material-ui/RaisedButton';
+
 const styles = {
+    textPadding: {
+        paddingLeft: '5px',
+    },
+    jumboBkg: {
+        backgroundColor: '#eef6ff',
+    },
+    raisedButtonBkg: {
+        backgroundColor: '#000',
+    },
     container: {
         minHeight: '100%',
         position: 'absolute',
@@ -49,10 +57,10 @@ const styles = {
     },
 
     hiroMarkerImg: {
-        marginTop: '1rem',
-        height: '5rem',
-        width: '5rem',
-        border: '5px solid white',
+        float: 'left',
+        width: '90px',
+        height: '90px',
+        marginRight: '5px',
     },
 
     fileInput: {
@@ -70,7 +78,7 @@ const styles = {
         fontSize: '2.5 em'
     }
 };
-*/
+
 class FileSelection extends Component {
     state = {
         showGallery: false,
@@ -121,47 +129,37 @@ class FileSelection extends Component {
             <div className="container">
             <div className="header clearfix">
 
-              <h3 className="text-muted">Project name</h3>
+              <h3 className="text-muted">Sharefair, 6th December 2017</h3>
             </div>
            
-            <div className="jumbotron">
-              <h1>Jumbotron heading</h1>
-              <p className="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-              <p>
-              <div className="col-md-12">
-                    <RaisedButton primary onTouchTap={this.handleOpenGalleryClick} label="Select One Of Our Project" />
+            <div className="jumbotron" style={styles.jumboBkg}>
+              <h1><b>AR</b>MTD</h1>
+              <p className="lead">
+              <b>[A]R</b>MTD, is an experiment aim to present RMTD units, using Augmented Reality (AR).</p>
+
+            </div>
+            <div className="row">
+                <div className="col-xs-12">
+                <img alt="Hiro marker example" src={hiro} style={styles.hiroMarkerImg}/>
+                
+                    <p className={styles.textPadding}>
+                        <b><a onTouchTap={this.handleOpenGalleryClick}>Select one, of the unit's fact-sheet</a></b> and then search for a Marker around you or <b><a>download it!</a></b>
+                        <br/>Point it with your camera and enjoy!
+                    </p>
                 </div>
-              </p>
+                <div className="col-xs-12 text-center">
+                <hr/>
+                <button className="btn btn-primary text-uppercase" onTouchTap={this.handleOpenGalleryClick} label="Select One Of Our Units Factsheet">Select One Of Our Units Factsheet</button>
+                </div>
             </div>
-            
-            <div className="row marketing">
-              <div className="col-lg-6">
-                  
-                <h4>Subheading</h4>
-                <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+            <div className="row">
+              <div className="col-lg-12">
+              <hr/>
+                <i className="text-right">Based on an <a>experiment</a> with <a>ARJS</a>.</i>
       
-                <h4>Subheading</h4>
-                <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-      
-                <h4>Subheading</h4>
-                <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-              </div>
-      
-              <div className="col-lg-6">
-                <h4>Subheading</h4>
-                <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-      
-                <h4>Subheading</h4>
-                <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-      
-                <h4>Subheading</h4>
-                <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
               </div>
             </div>
-      
-            <footer className="footer">
-              <p>&copy; 2016 Company, Inc.</p>
-            </footer>
       
           </div>
                
