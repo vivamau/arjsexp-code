@@ -30,6 +30,13 @@ const defaultImages = [
     require('./assets/drawing5.png'),
     require('./assets/drawing6.png'),
     require('./assets/drawing7.png'),
+    require('./assets/drawing8.png'),
+    require('./assets/drawing9.png'),
+    require('./assets/drawing10.png'),
+    require('./assets/drawing11.png'),
+    require('./assets/drawing12.png'),
+    require('./assets/drawing13.png'),
+    require('./assets/drawing14.png'),
 ];
 
 const Gallery = ({ images = defaultImages, onClose, onSelected }) => (

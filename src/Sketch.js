@@ -122,7 +122,7 @@ class Sketch extends Component {
                     onRotationChange={this.handleRotationChange}
                 /> }
                 {markerFound && showTips && <Tips onHide={this.handleHideTips} />}
-                <button className="btn btn-primary text-uppercase" onClick={this.handleBack} style={styles.backButton}>Back</button>
+                <button className="btn btn-primary text-uppercase" onClick={this.handleBack} style={styles.backButton}>Close</button>
                 <Settings
                     opacity={opacity}
                     blur={blur}
